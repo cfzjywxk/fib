@@ -9,3 +9,15 @@ def fib(n: int) -> int:
     for _ in range(n):
         a, b = b, a + b
     return a
+
+
+def main(argv: list[str]) -> int:
+    n = int(argv[1])
+    print(fib(n))
+    return 0
+
+
+if __name__ == "__main__":
+    import sys
+
+    raise SystemExit(main(sys.argv))
